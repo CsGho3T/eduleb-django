@@ -1,0 +1,206 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Eduleb - Education HTML Template">
+<meta name="keywords" content="agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup">
+<title>Eduleb - آموزش قالب HTML</title>
+<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'fonts/themify-icons.css' %}">
+<link rel="stylesheet" href="{% static 'owlcarousel/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'owlcarousel/css/owl.theme.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery-simple-mobilemenu.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body data-spy="scroll" data-offset="80">
+<div class="preloaders"><span class="loader"></span></div>
+
+    {% include "header.html" %}
+
+<section class="section-top">
+    <div class="container">
+        <div class="col-lg-10 offset-lg-1 text-center">
+            <div class="section-top-title wow fadeInRight" data-wow-duration="1s">
+                <h1>ثبت نام</h1>
+
+                <ul>
+                    <li><a href="{% url 'home' %}">صفحه اصلی</a></li>
+                    <li>/ ثبت نام</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="contact_area section-padding">
+    <div class="container">
+
+        <div class="row justify-content-center">
+
+            <div class="col-xl-7 col-lg-8 col-md-10">
+
+                <div class="contact shadow p-5 rounded bg-white wow fadeInUp">
+
+                    <div class="text-center mb-5">
+
+                        <h3>ایجاد حساب کاربری</h3>
+
+                        <p>
+                            اطلاعات زیر را تکمیل کنید.
+                        </p>
+
+                    </div>
+
+                    <form method="post">
+
+                        {% csrf_token %}
+
+
+                        {% if form.errors %}
+                        <div class="alert alert-danger mb-4">
+
+                            {% for field in form %}
+
+                                {% for error in field.errors %}
+                                    <p class="mb-1">{{ error }}</p>
+                                {% endfor %}
+
+                            {% endfor %}
+
+                            {% for error in form.non_field_errors %}
+                                <p class="mb-1">{{ error }}</p>
+                            {% endfor %}
+
+                        </div>
+                        {% endif %}
+
+                        <div class="row">
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="mb-2">نام</label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="first_name"
+                                    placeholder="نام"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="mb-2">نام خانوادگی</label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="last_name"
+                                    placeholder="نام خانوادگی"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-12 mb-4">
+
+                                <label class="mb-2">نام کاربری</label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    name="username"
+                                    placeholder="نام کاربری"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-12 mb-4">
+
+                                <label class="mb-2">ایمیل</label>
+
+                                <input
+                                    type="email"
+                                    class="form-control"
+                                    name="email"
+                                    placeholder="example@gmail.com"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="mb-2">رمز عبور</label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    name="password1"
+                                    placeholder="********"
+                                    required>
+
+                            </div>
+
+                            <div class="col-md-6 mb-4">
+
+                                <label class="mb-2">تکرار رمز عبور</label>
+
+                                <input
+                                    type="password"
+                                    class="form-control"
+                                    name="password2"
+                                    placeholder="********"
+                                    required>
+
+                            </div>
+
+                            <div class="col-12 mt-3">
+
+                                <button type="submit" class="btn_one w-100">
+                                    ثبت نام
+                                </button>
+
+                            </div>
+
+                            <div class="col-12 text-center mt-4">
+
+                                <p>
+
+                                    قبلاً ثبت نام کرده‌اید؟
+
+                                    <a href="{% url 'login' %}">
+                                        وارد شوید
+                                    </a>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+    {% include "footer.html" %}
+</body>
+</html>

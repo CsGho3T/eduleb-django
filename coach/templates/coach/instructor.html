@@ -1,0 +1,113 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Eduleb - Education HTML Template">
+<meta name="keywords" content="agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup">
+<title>Eduleb - آموزش قالب HTML</title>
+<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'fonts/themify-icons.css' %}">
+<link rel="stylesheet" href="{% static 'owlcarousel/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'owlcarousel/css/owl.theme.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery-simple-mobilemenu.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body data-spy="scroll" data-offset="80">
+<div class="preloaders"><span class="loader"></span></div>
+
+    {% include "header.html" %}
+
+<section class="section-top"><div class="container"><div class="col-lg-10 offset-lg-1 text-center"><div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+<h1>مربی ما</h1>
+<ul>
+<li><a href="{% url 'home' %}">صفحه اصلی</a></li>
+<li>/ مربی ها</li>
+</ul>
+</div></div></div></section>
+<section class="team_area section-padding"><div class="container">
+<div class="section-title text-center">
+<h2>با مربیان ما آشنا شوید</h2>
+<p>ما یک رویکرد کاملاً جدید برای اساسی ترین پارادایم های یادگیری ارائه می دهیم. از میان طیف گسترده ای از گزینه های یادگیری انتخاب کنید و مهارت های جدیدی به دست آورید! مدرسه ما معلوم است</p>
+</div>
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="our-team">
+<div class="team-content">
+<a href="#"><img src="{% static 'img/team/team1.jpg' %}" alt=""></a><ul class="social-links">
+<li><a href="#" class="ti-twitter"></a></li>
+<li><a href="#" class="ti-linkedin"></a></li>
+<li><a href="#" class="ti-facebook"></a></li>
+</ul>
+</div>
+<div class="team-prof">
+<h3>بیلکیس وابی</h3>
+<span>طراح وب</span>
+</div>
+<div class="sth_det2">
+<span class="ti-file"><u>04 دوره</u></span><span class="ti-user"><u>27 دانشجو</u></span>
+</div>
+</div></div>
+<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="our-team">
+<div class="team-content">
+<a href="#"><img src="{% static 'img/team/team2.jpg' %}" alt=""></a><ul class="social-links">
+<li><a href="#" class="ti-twitter"></a></li>
+<li><a href="#" class="ti-linkedin"></a></li>
+<li><a href="#" class="ti-facebook"></a></li>
+</ul>
+</div>
+<div class="team-prof">
+<h3>خلق وسیم</h3>
+<span>شرکت انواتو</span>
+</div>
+<div class="sth_det2">
+<span class="ti-file"><u>06 دوره</u></span><span class="ti-user"><u>41 دانش آموز</u></span>
+</div>
+</div></div>
+<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="our-team">
+<div class="team-content">
+<a href="#"><img src="{% static 'img/team/team3.jpg' %}" alt=""></a><ul class="social-links">
+<li><a href="#" class="ti-twitter"></a></li>
+<li><a href="#" class="ti-linkedin"></a></li>
+<li><a href="#" class="ti-facebook"></a></li>
+</ul>
+</div>
+<div class="team-prof">
+<h3>شیین تیم</h3>
+<span>Codecanyou</span>
+</div>
+<div class="sth_det2">
+<span class="ti-file"><u>13 دوره</u></span><span class="ti-user"><u>31 دانش آموز</u></span>
+</div>
+</div></div>
+<div class="col-lg-3 col-sm-6 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="our-team">
+<div class="team-content">
+<a href="#"><img src="{% static 'img/team/team4.jpg' %}" alt=""></a><ul class="social-links">
+<li><a href="#" class="ti-twitter"></a></li>
+<li><a href="#" class="ti-linkedin"></a></li>
+<li><a href="#" class="ti-facebook"></a></li>
+</ul>
+</div>
+<div class="team-prof">
+<h3>شريف شريفه</h3>
+<span>چوتور Tsc</span>
+</div>
+<div class="sth_det2">
+<span class="ti-file"><u>07 دوره</u></span><span class="ti-user"><u>24 دانشجو</u></span>
+</div>
+</div></div>
+</div>
+</div></section>
+
+    {% include "footer.html" %}
+
+</body>
+</html>

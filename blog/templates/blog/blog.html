@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html dir="rtl" lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Eduleb - Education HTML Template">
+<meta name="keywords" content="agency, business, corporate, creative, html5, modern, multipurpose, One Page, parallax, startup">
+<title>Eduleb - آموزش قالب HTML</title>
+<link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+<link href="https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'fonts/font-awesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'fonts/themify-icons.css' %}">
+<link rel="stylesheet" href="{% static 'owlcarousel/css/owl.carousel.css' %}">
+<link rel="stylesheet" href="{% static 'owlcarousel/css/owl.theme.css' %}">
+<link rel="stylesheet" href="{% static 'css/jquery-simple-mobilemenu.css' %}">
+<link rel="stylesheet" href="{% static 'css/magnific-popup.css' %}">
+<link rel="stylesheet" href="{% static 'css/animate.css' %}">
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body data-spy="scroll" data-offset="80">
+<div class="preloaders"><span class="loader"></span></div>
+
+    {% include "header.html" %}
+
+<section class="section-top"><div class="container"><div class="col-lg-10 offset-lg-1 text-center"><div class="section-top-title wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0">
+<h1>وبلاگ ما</h1>
+<ul>
+<li><a href="{% url 'course' %}">صفحه اصلی</a></li>
+<li>/ وبلاگ</li>
+</ul>
+</div></div></div></section>
+
+<section id="blog" class="blog_area section-padding"><div class="container"><div class="row">
+<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="single_blog">
+<img src="{% static 'img/blog/1.jpg' %}" class="img-fluid" alt="image"><div class="content_box">
+<span>10 مه 2024 |<a href="{% url 'blog_single' %}">تحصیلات</a></span><h2><a href="{% url 'blog_single' %}">نقاشی و مجسمه سازی حرفه ای موبایل</a></h2>
+<a class="btn_one" href="{% url 'course' %}">ادامه مطلب<i class="ti-arrow-top-left"></i></a>
+</div>
+</div></div>
+<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="single_blog">
+<img src="{% static 'img/blog/2.jpg' %}" class="img-fluid" alt="image"><div class="content_box">
+<span>16 مه 2024 |<a href="{% url 'blog_single' %}">تحصیلات</a></span><h2><a href="{% url 'blog_single' %}">قالب گیری سرامیک حرفه ای برای مبتدیان</a></h2>
+<a class="btn_one" href="{% url 'course' %}">ادامه مطلب<i class="ti-arrow-top-left"></i></a>
+</div>
+</div></div>
+<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0"><div class="single_blog">
+<img src="{% static 'img/blog/3.jpg' %}" class="img-fluid" alt="image"><div class="content_box">
+<span>18 مه 2024 |<a href="{% url 'blog_single' %}">برنامه نویسی</a></span><h2><a href="{% url 'blog_single' %}">آموزش درباره ایجاد رهبران برای فردا است</a></h2>
+<a class="btn_one" href="{% url 'course' %}">ادامه مطلب<i class="ti-arrow-top-left"></i></a>
+</div>
+</div></div>
+<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="single_blog">
+<img src="{% static 'img/blog/4.jpg' %}" class="img-fluid" alt="image"><div class="content_box">
+<span>10 مه 2024 |<a href="{% url 'blog_single' %}">تحصیلات</a></span><h2><a href="{% url 'blog_single' %}">نقاشی و مجسمه سازی حرفه ای موبایل</a></h2>
+<a class="btn_one" href="{% url 'course' %}">ادامه مطلب<i class="ti-arrow-top-left"></i></a>
+</div>
+</div></div>
+<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.1s" data-wow-offset="0"><div class="single_blog">
+<img src="{% static 'img/blog/5.jpg' %}" class="img-fluid" alt="image"><div class="content_box">
+<span>16 مه 2024 |<a href="{% url 'blog_single' %}">تحصیلات</a></span><h2><a href="{% url 'blog_single' %}">قالب گیری سرامیک حرفه ای برای مبتدیان</a></h2>
+<a class="btn_one" href="{% url 'course' %}">ادامه مطلب<i class="ti-arrow-top-left"></i></a>
+</div>
+</div></div>
+<div class="col-lg-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s" data-wow-offset="0"><div class="single_blog">
+<img src="{% static 'img/blog/6.jpg' %}" class="img-fluid" alt="image"><div class="content_box">
+<span>18 مه 2024 |<a href="{% url 'blog_single' %}">برنامه نویسی</a></span><h2><a href="{% url 'blog_single' %}">آموزش درباره ایجاد رهبران برای فردا است</a></h2>
+<a class="btn_one" href="{% url 'course' %}">ادامه مطلب<i class="ti-arrow-top-left"></i></a>
+</div>
+</div></div>
+</div></div>
+</section>
+
+    {% include "footer.html" %}
+
+</body>
+</html>

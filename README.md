@@ -28,3 +28,28 @@ Clone the repository:
 
 ```bash
 git clone https://github.com/CsGho3T/eduleb-django.git
+
+Navigate to the project directory:
+
+cd eduleb-django
+
+Create a virtual environment:
+
+python -m venv venv
+
+Install dependencies:
+
+pip install -r requirements.txt
+
+Run migrations:
+
+python manage.py migrate
+
+Start the development server:
+
+python manage.py runserver
+Future Improvements
+Add more platform features
+Improve backend architecture
+Add automated tests
+Deploy the application
